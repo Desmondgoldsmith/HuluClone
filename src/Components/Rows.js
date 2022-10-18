@@ -15,12 +15,12 @@ function Rows({fetchUrl}) {
     fetchData();
   },[fetchUrl])
   return (
-    <div className='row'>
-     <div className='row_poster'>
+    <div className={'row'}>
+     <div className={'row_poster'}>
        {
         movies.map(movie=>(
           <img
-           className='image_poster'
+           className={'image_poster'}
            src={`${base_url}${movie.poster_path}`}
            alt = {movie.name} 
            />
