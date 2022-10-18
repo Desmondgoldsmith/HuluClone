@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Rows() {
+function Rows(){
+    const [movies,setMovies] = useState([]);
   return (
     <div className='row'>     
        <div className='row_poster'>
