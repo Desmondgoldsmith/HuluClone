@@ -9,9 +9,9 @@ function GetVideos({movie}) {
          alt = {movie.name}
          />
          {/* movie.overview */}
-         <p>Something here... </p>
-         <h2>Movie Name</h2>
-         <p>no of likes</p>
+         <p className='item'>Something here... </p>
+         <h2 className='item'>Movie Name</h2>
+         <p className='item'>no of likes</p>
     </div>
   )
 }

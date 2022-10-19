@@ -2,7 +2,7 @@
     width: 450px;
     height: 300px;
     object-fit: contain;
-    padding: 30px;
+    padding: 20px;
 
 
 }
@@ -19,4 +19,8 @@
 
 .GetVideos > h2{
     padding-top: 10px;
+}
+
+.item{
+    padding-left: 20px;
 }
