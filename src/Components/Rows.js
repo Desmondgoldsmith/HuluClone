@@ -1,13 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import GetVideos from './GetVideos'
+import axios from '../Axios';
+import Request from '../Request';
 
 
-
-
-function Rows({movies}) {
+function Rows() {
+  const [movies,setMovies] = useState([]);
+  useEffect(()=>{
+    async function getData(){
+      const request = await axios.get(Request.fetchHorrorMovies);
+      setMovies(request.data.results);
+      return request;
+    }
+    getData();
+  },[])
   return (
     <div className={'row'}>
-      <GetVideos movies = {movies}/> 
+     {movies.map((movie) => (<GetVideos movie = {movie}/> ))}
+      
     </div>
   )
 }
