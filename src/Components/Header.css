@@ -1,58 +1,55 @@
-.Header{
+.header{
     background-color: black;
-    color:white;
-
-}
-
-.header_details{
+    color: white;
     display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
     justify-content: space-between;
+    text-align: center;
+    align-items: center;
     overflow-x: scroll;
 }
-/* hide scrollbar for chrome & safari */
-.header_details::-webkit-scrollbar{
-    display: none;
-}
-/* hide scroll bar for IE & Firefox */
-.header_details{
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
 
-.header_details >img{
+.header >img{
     object-fit: contain;
     height: 80px;
 }
 
-
+.header_icons{
+    display: flex;
+    cursor: pointer;
+}
 .header_icon{
     display: flex;
     flex-direction: column;
+    padding: 20px;
     width: 100px;
-    cursor: pointer;
 }
-.header_icon > .MuiSvgIcon-root{
-margin-left: auto;
-margin-right: auto;
-font-size: 30px;
+
+.header_icon .MuiSvgIcon-root{
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 30px;
 }
 
 .header_icon > p{
- display: none;
- text-transform: uppercase;
- letter-spacing: 3px;
- font-size:smaller;
- margin-left: auto;
- margin-right: auto;
-}
-
-.header_icon:hover > p{
-    display: inline;
+    display: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: smaller;
 }
 
 .main--active > p{
     display: inline!important;
+}
+.header_icon:hover >p{
+    display: inline;
+}
+/* remove scrollbar from chrome , safari , opera */
+.header::-webkit-scrollbar{
+    display: none;
+}
+
+/* remove scroll bar for IE & Firefox */
+.header_details{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }

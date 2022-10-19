@@ -8,8 +8,8 @@ import PersonIcon from '@mui/icons-material/Person';
 import './Header.css';
 function Header() {
   return (
-    <div className='Header'>
-      <div className='header_details'>
+    <div className='header'>
+      <div className='header_icons'>
         <div className='header_icon main--active'>
         <HomeIcon />
         <p>Home</p>
@@ -34,8 +34,8 @@ function Header() {
         <PersonIcon />
         <p>User</p>
     </div>
-    <img src="https://press.hulu.com/wp-content/uploads/2020/02/hulu-white.png" alt="Hulu"></img>
       </div>
+          <img src="https://press.hulu.com/wp-content/uploads/2020/02/hulu-white.png" alt="Hulu"></img>
     </div>
   )
 }
