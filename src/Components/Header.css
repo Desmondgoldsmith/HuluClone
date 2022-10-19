@@ -1,6 +1,5 @@
 .Header{
     background-color: black;
-    justify-content: space-between;
 
 }
 
@@ -22,7 +21,10 @@
 .header_icon{
     display: flex;
     flex-direction: column;
+    width: 100px;
+    cursor: pointer;
 }
-.header_icon > p{
-    
+.header_icon > .MuiSvgIcon-root{
+margin-left: auto;
+margin-right: auto;
 }
