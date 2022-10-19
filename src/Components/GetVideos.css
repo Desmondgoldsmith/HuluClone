@@ -33,10 +33,10 @@
     padding-right: 3px;
 }
 
-.main--active{
+.main----active{
     visibility: hidden;
 }
 
-.GetVideos:hover>.main--active{
+.GetVideos:hover>.main----active{
     visibility: visible;
 }

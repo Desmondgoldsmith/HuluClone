@@ -1,6 +1,8 @@
 import React from 'react'
 import './GetVideos.css';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 function GetVideos({movie}) {
@@ -17,7 +19,8 @@ function GetVideos({movie}) {
          </div>
          <p className='item'>{truncate(movie?.overview,50)} </p>
          <h2 className='item'>{movie.title||movie.original_name}</h2>
-         <p className='item main--active'><ThumbUpIcon/>{movie.vote_count}</p>
+         <p className='item main----active'><AccessTimeFilledIcon/>{movie.release_date||movie.first_air_date} <FiberManualRecordIcon/>
+          <ThumbUpIcon/>{movie.vote_count}</p>
     </div>
   )
 }
