@@ -4,10 +4,10 @@ import GetVideos from './GetVideos'
 
 
 
-function Rows({movie}) {
+function Rows({movies}) {
   return (
     <div className={'row'}>
-      <GetVideos /> 
+      <GetVideos movies = {movies}/> 
     </div>
   )
 }
