@@ -20,6 +20,7 @@
     transform: scale(1.09);
 }
 
+
 .GetVideos > h2{
     padding-top: 10px;
 }
@@ -30,4 +31,12 @@
 .item > .MuiSvgIcon-root{
     font-size: 15px;
     padding-right: 3px;
+}
+
+.main--active{
+    visibility: hidden;
+}
+
+.GetVideos:hover>.main--active{
+    visibility: visible;
 }
