@@ -9,7 +9,7 @@ function App({fetchUrl}) {
     <div className="app">
     <Header />
     <Navbar />
-     <Rows fetchUrl = {request.fetchNetflixOriginals} />  
+     <Rows />  
     </div>
   );
 }
