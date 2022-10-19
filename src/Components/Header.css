@@ -1,0 +1,28 @@
+.Header{
+    background-color: black;
+    justify-content: space-between;
+
+}
+
+.header_details{
+    color:white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+.header_details >img{
+    object-fit: contain;
+    height: 80px;
+}
+
+
+.header_icon{
+    display: flex;
+    flex-direction: column;
+}
+.header_icon > p{
+    
+}

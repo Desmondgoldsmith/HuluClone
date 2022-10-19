@@ -7,7 +7,7 @@ function App({fetchUrl}) {
   return (
     <div className="app">
     <Header />
-     <Rows fetchUrl = {request.fetchNetflixOriginals} />  
+     {/* <Rows fetchUrl = {request.fetchNetflixOriginals} />   */}
     </div>
   );
 }

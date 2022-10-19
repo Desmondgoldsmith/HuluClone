@@ -34,7 +34,7 @@ function Header() {
         <PersonIcon />
         <p>User</p>
     </div>
-    <img src="https://www.kindpng.com/picc/m/151-1513487_hulu-logo-white-transparent-hd-png-download.png" alt="Hulu"></img>
+    <img src="https://press.hulu.com/wp-content/uploads/2020/02/hulu-white.png" alt="Hulu"></img>
       </div>
     </div>
   )
