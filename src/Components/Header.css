@@ -15,18 +15,22 @@
 .header_icons{
     display: flex;
     cursor: pointer;
+
 }
 .header_icon{
     display: flex;
     flex-direction: column;
     padding: 20px;
     width: 100px;
+
+
 }
 
 .header_icon .MuiSvgIcon-root{
    margin-left: auto;
    margin-right: auto;
    font-size: 30px;
+
 }
 
 .header_icon > p{
@@ -34,6 +38,8 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: smaller;
+    transition: transform 500ms ease-in;
+
 }
 
 .main--active > p{
@@ -41,7 +47,12 @@
 }
 .header_icon:hover >p{
     display: inline;
+    transform: scale(1.2);
+
+
 }
+
+
 /* remove scrollbar from chrome , safari , opera */
 .header::-webkit-scrollbar{
     display: none;
