@@ -11,6 +11,7 @@ function Rows() {
     async function getData(){
       const request = await axios.get(Request.fetchHorrorMovies);
       setMovies(request.data.results);
+      console.log(request.data.results)
       return request;
     }
     getData();

@@ -24,3 +24,7 @@
 .item{
     padding-left: 20px;
 }
+.item > .MuiSvgIcon-root{
+    font-size: 15px;
+    padding-right: 3px;
+}
