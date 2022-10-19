@@ -10,7 +10,7 @@ function GetVideos({movie}) {
      }
   return (
     <div className='GetVideos'>
-       <div className = 'getvideo'>
+       <div className = 'get'>
         <img src={`${base_url}${movie.backdrop_path || movie.poster_path}`}
          alt = {movie.name}
          />

@@ -1,19 +1,22 @@
-.GetVideos > img{
+.get > img{
     width: 450px;
     height: 300px;
     object-fit: contain;
     padding: 20px;
 
 
+
 }
 .GetVideos{
     color: white;
     height: 400px;
+}
+.get{
     transition: transform 100ms ease-in;
 
 }
 
-.GetVideos:hover{
+.get:hover{
     transform: scale(1.09);
 }
 
