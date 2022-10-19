@@ -10,7 +10,7 @@ function Header() {
   return (
     <div className='Header'>
       <div className='header_details'>
-        <div className='header_icon'>
+        <div className='header_icon main--active'>
         <HomeIcon />
         <p>Home</p>
     </div>

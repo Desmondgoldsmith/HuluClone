@@ -27,4 +27,22 @@
 .header_icon > .MuiSvgIcon-root{
 margin-left: auto;
 margin-right: auto;
+font-size: 30px;
+}
+
+.header_icon > p{
+ display: none;
+ text-transform: uppercase;
+ letter-spacing: 3px;
+ font-size:smaller;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.header_icon:hover > p{
+    display: inline;
+}
+
+.main--active > p{
+    display: inline!important;
 }
