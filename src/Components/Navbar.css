@@ -12,9 +12,10 @@
     font-weight: 500;
     cursor: pointer;
     opacity: 0.7;
+    transition: transform 50ms ease-in-out;
 }
 
 .navbar_items:hover{
     opacity:2.5;
-    
+    transform: scale(1.2);
 }
