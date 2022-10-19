@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import GetVideos from './GetVideos'
 import axios from '../Axios';
 import Request from '../Request';
+import './StyleRow.css'
 
 
 function Rows() {
@@ -17,7 +18,6 @@ function Rows() {
   return (
     <div className={'row'}>
      {movies.map((movie) => (<GetVideos movie = {movie}/> ))}
-      
     </div>
   )
 }

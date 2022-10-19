@@ -8,8 +8,9 @@ function GetVideos({movie}) {
         <img src={`${base_url}${movie.backdrop_path}`}
          alt = {movie.name}
          />
-         <p>{movie.overview} </p>
-         <h2>{movie.name}</h2>
+         {/* movie.overview */}
+         <p>Something here... </p>
+         <h2>Movie Name</h2>
          <p>no of likes</p>
     </div>
   )

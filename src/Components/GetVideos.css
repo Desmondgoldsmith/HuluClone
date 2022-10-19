@@ -1,12 +1,13 @@
 .GetVideos > img{
-    width: 500px;
+    width: 450px;
     height: 300px;
     object-fit: contain;
     padding: 30px;
+
 }
 .GetVideos{
     color: white;
-    width: 500px;
+    /* width: 500px; */
     height: 300px;
     transition: transform 100ms ease-in;
 
@@ -14,5 +15,8 @@
 
 .GetVideos:hover{
     transform: scale(1.09);
+}
 
+.GetVideos > h2{
+    padding-top: 10px;
 }
