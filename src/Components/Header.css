@@ -1,15 +1,25 @@
 .Header{
     background-color: black;
+    color:white;
 
 }
 
 .header_details{
-    color:white;
     display: flex;
     align-items: center;
     text-align: center;
+    padding: 20px;
     justify-content: space-between;
-
+    overflow-x: scroll;
+}
+/* hide scrollbar for chrome & safari */
+.header_details::-webkit-scrollbar{
+    display: none;
+}
+/* hide scroll bar for IE & Firefox */
+.header_details{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .header_details >img{
