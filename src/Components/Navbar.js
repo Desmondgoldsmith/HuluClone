@@ -1,10 +1,11 @@
 import React from 'react'
 import './Navbar.css';
+import request from '../Request';
 
 function Navbar({selectedOption}) {
   return (
     <div className='navbar'>
-    <h3 className='navbar_items'>Trending</h3>
+    <h3 onClick={()=>selectedOption(request.fetchTrending)} className='navbar_items'>Trending</h3>
     <h3 className='navbar_items'>Top Rated</h3>
     <h3 className='navbar_items'>Action</h3>
     <h3 className='navbar_items'>Comedy</h3>
