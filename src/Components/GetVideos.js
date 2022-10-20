@@ -18,7 +18,7 @@ function GetVideos({movie}) {
          />
          </div>
          <p className='item'>{truncate(movie?.overview,50)} </p>
-         <h2 className='item'>{movie.title||movie.original_name}</h2>
+         <h2 className='item'>{truncate(movie?.title||movie?.original_name,30)}</h2>
          <p className='item main----active'><AccessTimeFilledIcon/>{movie.release_date||movie.first_air_date} <FiberManualRecordIcon/>
           <ThumbUpIcon/>{movie.vote_count}</p>
     </div>
