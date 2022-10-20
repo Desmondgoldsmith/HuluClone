@@ -4,12 +4,12 @@ import Navbar from './Components/Navbar';
 import Rows from './Components/Rows';
 import request from './Request';
 
-function App({fetchUrl}) {
+function App({fetchUrl,selecteOptions}) {
   return (
     <div className="app">
     <Header />
     <Navbar />
-     <Rows />  
+     <Rows selectedOption = {selecteOption}/>  
     </div>
   );
 }
