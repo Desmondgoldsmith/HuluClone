@@ -1,17 +1,17 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import './GetVideos.css';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 const base_url = "https://image.tmdb.org/t/p/original/";
-function GetVideos({movie}) {
+const GetVideos = forwardRef(({movie}, ref) => {
      //truncate text
      function truncate(str, n){
         return str?.length > n ? str.substr(0,n-1) + "...":str;
      }
   return (
-    <div className='GetVideos'>
+    <div ref = {ref} className='GetVideos'>
        <div className = 'get'>
         <img src={`${base_url}${movie.backdrop_path || movie.poster_path}`}
          alt = {movie.name}
@@ -23,6 +23,7 @@ function GetVideos({movie}) {
           <ThumbUpIcon/>{movie.vote_count}</p>
     </div>
   )
-}
+
+})
 
 export default GetVideos
