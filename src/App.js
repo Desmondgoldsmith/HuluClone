@@ -8,7 +8,7 @@ function App({fetchUrl,selecteOptions}) {
   return (
     <div className="app">
     <Header />
-    <Navbar />
+    <Navbar selectedOption = {selecteOption}/>
      <Rows selectedOption = {selecteOption}/>  
     </div>
   );
