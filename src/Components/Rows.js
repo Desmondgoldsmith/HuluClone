@@ -17,7 +17,7 @@ function Rows({selectedOption}) {
   },[selectedOption])
   return (
     <div className={'row'}>
-     {movies.map((movie) => (<GetVideos movie = {movie}/> ))}
+     {movies.map((movie) => (<GetVideos key = {movie.id} movie = {movie}/> ))}
     </div>
   )
 }
