@@ -9,7 +9,7 @@ function Rows({selectedOption}) {
   const [movies,setMovies] = useState([]);
   useEffect(()=>{
     async function getData(){
-      const request = await axios.get(Request.fetchHorrorMovies);
+      const request = await axios.get(selectedOption);
       setMovies(request.data.results);
       console.log(request.data.results)
       return request;
