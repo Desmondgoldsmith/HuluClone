@@ -5,7 +5,7 @@ import Request from '../Request';
 import './StyleRow.css'
 
 
-function Rows() {
+function Rows({selectedOption}) {
   const [movies,setMovies] = useState([]);
   useEffect(()=>{
     async function getData(){
