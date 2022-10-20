@@ -6,7 +6,7 @@ import Rows from './Components/Rows';
 import request from './Request';
 
 function App({fetchUrl,selecteOptions}) {
-  const [selectedOption,setSelectedOption] = useState(request.fetchNetflixOriginals);
+  const [selectedOption,setSelectedOption] = useState(request.fetchHorrorMovies);
   return (
     <div className="app">
     <Header />

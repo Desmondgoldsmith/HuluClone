@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import GetVideos from './GetVideos'
 import axios from '../Axios';
-import Request from '../Request';
 import './StyleRow.css'
 
 
@@ -11,11 +10,11 @@ function Rows({selectedOption}) {
     async function getData(){
       const request = await axios.get(selectedOption);
       setMovies(request.data.results);
-      console.log(request.data.results)
+      // console.log(request.data.results)
       return request;
     }
     getData();
-  },[])
+  },[selectedOption])
   return (
     <div className={'row'}>
      {movies.map((movie) => (<GetVideos movie = {movie}/> ))}
