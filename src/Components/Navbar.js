@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navbar.css';
 
-function Navbar() {
+function Navbar({selectedOption}) {
   return (
     <div className='navbar'>
     <h3 className='navbar_items'>Trending</h3>
