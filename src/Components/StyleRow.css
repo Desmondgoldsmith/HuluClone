@@ -1,4 +1,4 @@
-.row{
+.row > div{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

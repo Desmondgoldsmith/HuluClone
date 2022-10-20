@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import GetVideos from './GetVideos'
 import axios from '../Axios';
 import './StyleRow.css'
+import FlipMove from 'react-flip-move';
 
 
 function Rows({selectedOption}) {
@@ -17,7 +18,9 @@ function Rows({selectedOption}) {
   },[selectedOption])
   return (
     <div className={'row'}>
-     {movies.map((movie) => (<GetVideos key = {movie.id} movie = {movie}/> ))}
+     <FlipMove>   
+       {movies.map((movie) => (<GetVideos key = {movie.id} movie = {movie}/> ))}
+    </FlipMove>
     </div>
   )
 }
